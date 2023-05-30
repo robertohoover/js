@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Saludar</title>
+</head>
+<body>
+    <button onclick="fechHoy()">Fecha</button>
+
+    <script>
+        let fecha = new Date();
+        let getYear = fecha.toLocaleDateString("default", { year: "numeric" });
+        let getMonth = fecha.toLocaleDateString("default", { month: "2-digit" });
+        let getDay = fecha.toLocaleDateString("default", { day: "2-digit" });
+
+        let dateFormat = getDay + "/" + getMonth + "/" + getYear;
+        function mostarFecha(){
+            alert(dateFormat)
+        }         
+    </script>
+</body>
+</html>
