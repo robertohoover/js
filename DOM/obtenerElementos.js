@@ -33,7 +33,7 @@ const agregarCaja = () => {
    */
    const contenedor = document.getElementById('contenedor1');
 
-//    contenedor.appendChild(nuevaCaja);
+   contenedor.appendChild(nuevaCaja);
 
     /*
         .insertAdjancentElement() - Nos permite agregar un alemanto 
@@ -49,6 +49,6 @@ const agregarCaja = () => {
 
         //.replaceWidth() - NOs permite reemlpazar el elemento por otro
 
-        document.querySelector('#contenedor1  .caja').replaceWith(nuevaCaja);
+        // document.querySelector('#contenedor1  .caja').replaceWith(nuevaCaja);
 
 };
